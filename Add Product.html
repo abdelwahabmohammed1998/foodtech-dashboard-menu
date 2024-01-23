@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="bg-white px-4 py-3">
+            <div class="ms-panel-header px-0 py-2 mb-2">
+              <h6 class="add-product-form-title">Add Product Form</h6>
+            </div>
+            <div class="mb-4">
+              <label for="Product-Name" class="form-label">Product Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Product-Name"
+                placeholder="Pizze ..."
+              />
+            </div>
+            <div class="mb-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="Select-Catagory" class="form-label"
+                    >Select Catagory</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="Select-Catagory"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="Currency" class="form-label">Currency</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="Currency"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">$</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="Quantity" class="form-label">Quantity</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Quantity"
+                    placeholder="01"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="Price" class="form-label">Price</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="Price"
+                    placeholder="$10"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="Description" class="form-label">Description</label>
+              <textarea
+                class="form-control"
+                id="Description"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="Product-Image" class="form-label"
+                >Product Image</label
+              >
+              <div class="input-group">
+                <input type="file" class="form-control" id="Product-Image" />
+                <label class="input-group-text" for="Product-Image"
+                  >Upload</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white px-4 py-3">
+            <div class="ms-panel-header px-0 py-2 mb-2">
+              <h6 class="add-product-form-title">PRODUCT</h6>
+            </div>
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide mb-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="https://slidesigma.nyc/templatemonster/angular/foodtech/assets/img/foodtech/add-product-1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="https://slidesigma.nyc/templatemonster/angular/foodtech/assets/img/foodtech/add-product-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="switch-section mb-4">
+              <div
+                class="form-check form-switch d-flex justify-content-between ps-0"
+              >
+                <label class="form-check-label" for="Status-Available"
+                  >Status Available</label
+                >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="Status-Available"
+                />
+              </div>
+            </div>
+            <div class="switch-section mb-4">
+              <div
+                class="form-check form-switch d-flex justify-content-between ps-0"
+              >
+                <label class="form-check-label" for="Discount-Active"
+                  >Discount Active</label
+                >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="Discount-Active"
+                  checked
+                />
+              </div>
+            </div>
+            <div class="btns-section mb-4">
+              <div
+                class="d-flex justify-content-between ps-0"
+              >
+                <button class="btn btn-dark px-5">Save</button>
+                <button class="btn btn-success px-3">Save and Add</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
